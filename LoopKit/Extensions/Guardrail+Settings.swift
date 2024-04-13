@@ -9,7 +9,7 @@
 import HealthKit
 
 public extension Guardrail where Value == HKQuantity {
-    static let suspendThreshold = Guardrail(absoluteBounds: (66.1)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
+    static let suspendThreshold = Guardrail(absoluteBounds: (50.4)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
 
     static func maxSuspendThresholdValue(correctionRangeSchedule: GlucoseRangeSchedule?, preMealTargetRange: ClosedRange<HKQuantity>?, workoutTargetRange: ClosedRange<HKQuantity>?) -> HKQuantity {
 
